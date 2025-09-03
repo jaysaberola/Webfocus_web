@@ -77,7 +77,7 @@
         .services-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 7rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -177,21 +177,19 @@
 
         <div class="position-relative">
             <!-- Hero Header -->
+
             <div class="services-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-lg-6">
+                        <div class="col-12 text-center">
                             <h1 class="display-4 fw-bold pop-animate slide-left"><span class="circle-draw"><span>Document Management System</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Go paperless and share digital documents easily</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"Streamline your document management with secure, efficient, and paperless solutions tailored for your organization."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Document Management System" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
+                            <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">"Streamline your document management with secure, efficient, and paperless solutions tailored for your organization."</h3>
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <!-- Document Management System Overview Section -->
             <div class="section-services">
                 <div class="container">
@@ -201,18 +199,17 @@
                             <p class="pop-animate slide-up stagger-1">We are an accredited implementation partner for document management system software applications that will help your organization to create e-documents, collaboratively edit and finalize these, completely secure and share documents within the organization. These applications allow the client to easily manage the entire document lifecycle online without paperwork and avoiding time-consuming steps. The DMS is the perfect application for ISO accreditation requirements, and also the ideal solution to reducing the use of papers and inks.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/1.jpg') }}" alt="Document Management System" class="pop-animate slide-right">
+                            <img src="{{ asset('images/landing-2/images/services/document.jpg') }}" alt="Document Management System" class="pop-animate slide-right">
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- FileHold DMS Section -->
             <div class="section-services">
                 <div class="container">
                     <div class="row col-mb-50">
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/2.jpg') }}" alt="FileHold DMS" class="pop-animate slide-left">
+                            <img src="{{ asset('images/landing-2/images/services/file.jpg') }}" alt="FileHold DMS" class="pop-animate slide-left">
                         </div>
                         <div class="col-lg-6">
                             <h2 class="pop-animate slide-up">FileHold Document Management</h2>

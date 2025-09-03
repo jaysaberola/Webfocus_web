@@ -73,7 +73,7 @@
         .services-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 7rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -112,7 +112,7 @@
 
         /* Services sections - matching history page section styling */
         .section-services {
-            padding: 2rem 0;
+            padding: 1rem 0;
             background-color: #fff;
         }
         .section-services h2 {
@@ -183,13 +183,7 @@
         .section-services td ul li:before {
             content: none;
         }
-        .section-services img {
-            margin-bottom: 5rem;
-            max-width: 100%;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
+        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .services-hero h1 {
@@ -206,6 +200,22 @@
                 overflow-x: auto;
             }
         }
+
+        .section-services .row {
+        display: flex;
+        align-items: stretch; /* Make all columns stretch to the same height */
+        }
+
+        .section-services .row > [class*="col-"] {
+        display: flex;
+        flex-direction: column; /* Keep content stacked properly */
+        }
+        .section-services img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Make image fill column neatly */
+
+        }
     </style>
 @endsection
 
@@ -216,19 +226,15 @@
         <div class="position-absolute vh-100 w-100 top-0 start-0 overflow-hidden">
             <img src="{{ asset('images/landing-2/images/hero-bg.svg') }}" alt="Hero Background" class="hero-bg">
         </div>
-
         <div class="position-relative">
             <!-- Hero Header -->
             <div class="services-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 fw-bold pop-animate slide-left">Our <span class="circle-draw"><span>Services</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
+                        <div class="col-12 text-center">
+                            <h1 class="display-4 fw-bold pop-animate slide-left">Our<span class="circle-draw"><span>Services</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Comprehensive IT solutions for your business needs</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"We provide a wide range of digital services to help your business grow and succeed in the modern digital landscape."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Services" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
+                            <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">Don't wait before someone else takes your ideal domain name! Choose from our diverse list of domains.</h3>
                         </div>
                     </div>
                 </div>
@@ -328,7 +334,10 @@
                 <div class="container">
                     <div class="row col-mb-50">
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/4.jpg') }}" alt="Domain Registrar" class="pop-animate slide-left">
+                            <h2 class="pop-animate slide-up">Domain Name Registration</h2>
+                            <p class="pop-animate slide-up stagger-1">These designated registrars can process your domain name registration on your behalf and will pass the costs of this process to you, including additional fees for providing this service. They will provide a domain search service, allowing you to search for domains and check their availability. Many also provide additional services, which they usually include under the same registration fee. These services include customer service and support, administration tools, and sometimes even a free single webpage you can use for your business while your final website is still being built.</p>
+                            <p class="pop-animate slide-up stagger-2">When you have selected the name that you wish to register, it is time for you to register it. The domain name registration is one of the most crucial steps in building an online identity, as a registered domain becomes a legal entity of the domain registrant and no other company or individual has any right to it. The process of registering a domain has become much simpler over the past few years.</p>
+                            <p class="pop-animate slide-up stagger-3">WebFocus is the Philippines' most trusted domain name registrar and continues to provide the most value for the best possible price. Give your website a home with a WebFocus domain name!</p>
                         </div>
                         <div class="col-lg-6">
                             <h2 class="pop-animate slide-up">Domain Registrar</h2>
@@ -346,22 +355,7 @@
                 </div>
             </div>
 
-            <!-- Domain Name Registration Section -->
-            <div class="section-services">
-                <div class="container">
-                    <div class="row col-mb-50">
-                        <div class="col-lg-6">
-                            <h2 class="pop-animate slide-up">Domain Name Registration</h2>
-                            <p class="pop-animate slide-up stagger-1">These designated registrars can process your domain name registration on your behalf and will pass the costs of this process to you, including additional fees for providing this service. They will provide a domain search service, allowing you to search for domains and check their availability. Many also provide additional services, which they usually include under the same registration fee. These services include customer service and support, administration tools, and sometimes even a free single webpage you can use for your business while your final website is still being built.</p>
-                            <p class="pop-animate slide-up stagger-2">When you have selected the name that you wish to register, it is time for you to register it. The domain name registration is one of the most crucial steps in building an online identity, as a registered domain becomes a legal entity of the domain registrant and no other company or individual has any right to it. The process of registering a domain has become much simpler over the past few years.</p>
-                            <p class="pop-animate slide-up stagger-3">WebFocus is the Philippines' most trusted domain name registrar and continues to provide the most value for the best possible price. Give your website a home with a WebFocus domain name!</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/5.jpg') }}" alt="Domain Name Registration" class="pop-animate slide-right">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
