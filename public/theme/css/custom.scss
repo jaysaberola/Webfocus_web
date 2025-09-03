@@ -1,0 +1,397 @@
+/* Scss Document */
+
+body {font-size: 18.6667px;}
+
+.quicklinks {
+	li {border-bottom:1px solid #ccc;padding:12px 0;border-bottom:1px solid #ccc;}
+	a {
+		&:hover {color:red;}
+	}
+}
+
+#slider {background:#000;}
+.slider-cont {position:relative;padding:0;
+	.slider-caption {position:absolute;width:100%;max-width:100%;left:0;}
+	img {width:100%;}
+}
+.slick-carousel {
+	.NextArrow{position:absolute;top:50%;right:0px;width:45px;height:45px;background:rgba(0,0,0,.50);border:0 none;margin-top:-22.5px;text-align:center;font-size:32px;color:#FFF;z-index:5;cursor:pointer;}
+	.PrevArrow{position:absolute;top:50%;left:0px;width:45px;height:45px;background:rgba(0,0,0,.50);border:0 none;margin-top:-22.5px;text-align:center;font-size:32px;color:#FFF;z-index:5;cursor:pointer;}
+}
+
+.video-wrap {position: absolute;}
+
+/* ----------------------------------------------------------------
+	Quicklinks
+-----------------------------------------------------------------*/ 
+.quicklinks {list-style:none;padding:0;margin:12px 0 24px;
+	li {border-bottom:1px solid #ededed;padding:2px 0;position:relative;
+		a {color:#333;display:block;padding:10px;border-radius:4px;transition:all 200ms ease;
+			&:hover {background:var(--themecolor);color:white;text-decoration:none;}
+			&:hover + i {color:white;}
+		}
+		&.current {
+			&> a {background:var(--themecolor);color:white;text-decoration:none;border-radius:4px;color:white;}
+			&> i {color:white;}
+		}
+		ul {list-style:none;padding-left:12px;display:none;
+			li:last-child {border-bottom:none;}
+		}
+	}
+	i {position:absolute;right:6px;top:12px;cursor:pointer;color:var(--themecolor);z-index:9;-webkit-transition:-webkit-transform 0.3s ease-in-out;transition:transform 0.3s ease-in-out;transform-origin:center;
+		&:hover {color:var(--themecolor) !important;}
+	}
+	.up {-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+	.down {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+}
+.side-nav {height:100%;width:300px; position:fixed;z-index:200;top:0;left:-320px;background-color:white; overflow-x:hidden;padding-top:60px;transition:0.5s;box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);padding-left:12px;padding-right:12px; 
+	.closebtn {position:absolute;top:0;right:25px;font-size:36px;text-decoration:none;color:#818181;display:block;transition:0.3s;cursor:pointer;}
+}
+#curtain {position:absolute;left:0;top:0;background:rgba(0,0,0,.8);height:100%;width:100%;z-index:200;transition:0.5s;display:none;}
+
+.dropdown-menu {min-width:auto !important;}
+.dropdown-toggle::after {display:none;}
+
+
+#footer {color:#193a4f !important;background-color: #efefef !important;font-size:11.2px;
+	a {color:#193a4f !important;font-size:11.2px;}
+	h4 {color:#193a4f !important;font-size:10.08px;}
+}
+
+.top-links-container li:first-child a {font-size:19px;font-weight:400;}
+.top-links-container a {font-size:13.06px;text-transform:capitalize;font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"}
+
+.hmepg {background:#193a4f;padding:12px;
+	li {border:none;
+		a {padding:21px 31px;color:white;
+			i {left:7px;top:auto;color:white;}
+			&:hover {background:white;color:#193a4f;}
+		}
+		&:hover i {color:#193a4f !important;}
+	}
+}
+
+.hsrch .dropdown-toggle::after {
+  display: inline-block;margin-left: .255em;vertical-align: .255em;content: "";border-top: .3em solid;border-right: .3em solid transparent;border-bottom: 0;border-left: .3em solid transparent;
+}
+
+
+ /* ----------------------------------------------------------------
+	Canvas: Law Firm
+-----------------------------------------------------------------*/
+
+:root {
+	--themecolor: #0F317E;
+	--themecolorrgba: 15, 49, 126;
+	--p-f-family: 'Manrope', sans-serif;
+}
+
+.text-border-right {
+	overflow: hidden;
+}
+
+.text-border-right::after {
+	content:"";
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	margin-right: -100%;
+	margin-left: 10px;
+	border-top: 1px solid #444;
+}
+
+.text-border-right.b-w-50::after {
+	width: 10rem;
+}
+
+.dark .text-border-right::after {
+	border-color: #fff;
+}
+
+.large-device-menu a {
+	position: relative;
+	display: block;
+	margin-bottom: 14px;
+	transition: all .25s ease;
+	font-weight: 500;
+}
+
+.large-device-menu a:last-child {
+	margin-bottom: 0;
+}
+
+.large-device-menu a:hover {
+	transform:  translateX(2px);
+	color: var(--bs-warning) !important;
+}
+
+.service-feature  .grid-inner .more-link {
+	margin-top: 10px;
+}
+
+.dark #header,
+#header.dark,
+.dark #header-wrap {
+	background-color:  #193a4f;
+	border-bottom: 1px solid var(--bs-warning);
+	border-top: 1px solid var(--bs-warning);
+}
+
+/*#logo a img {
+	height: auto !important;
+}*/
+
+@media (min-width: 992px) {
+
+	.sticky-header .large-device-menu-wrap {
+		align-items: center;
+	}
+
+	.sticky-header .large-device-menu a {
+		display: inline-block;
+		margin: 0 18px;
+		transform: none;
+	}
+
+	.sticky-header .header-row {
+		align-items: center !important;
+		padding-top: .2rem !important;
+		padding-bottom: .2rem !important;	
+	}
+
+	.sticky-header .large-device-menu {
+		padding: 0;
+		margin: 0
+	}
+
+	.service-feature {
+		position: relative;
+		transform: translateY(-50%);
+		z-index: 4;
+	}
+
+	.service-feature  .grid-inner .more-link {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
+		margin-top: 0;
+	}
+
+	.service-feature .grid-inner:hover .more-link {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(4px);
+		will-change: transform;
+	}
+
+	.service-feature .grid-inner .f-b-desc {
+		transform: translateY(10px);
+		transition: transform .3s ease;
+		will-change: transform;
+	}
+
+	.service-feature .grid-inner:hover .f-b-desc {
+		transform: translateY(-4px);
+	}
+
+	.grid-border { overflow: hidden; }
+
+	.grid-border [class^=col-]:before {
+		content: '';
+		position: absolute;
+	}
+
+	.grid-border [class^=col-]:before {
+		height: 100%;
+		top: 0;
+		left: -2px;
+		border-left: 2px solid rgba(var(--themecolorrgba),0.1);
+	}
+
+	.dark .grid-border [class^=col-]:before { border-color: rgba(255,255,255,0.15); }
+
+}
+
+.lady-justice-img::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: -30px -30px 0 var(--bs-warning);
+	opacity: .4;
+	border-radius: .25rem;
+}
+
+#lawfirm-inline label {
+	display: inline-block;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: 300;
+	font-size: 1.75rem;
+	line-height: 2;
+}
+
+#lawfirm-inline input,
+#lawfirm-inline select,
+.dark #lawfirm-inline input,
+.dark #lawfirm-inline select {
+	display: inline-block;
+	background-color: transparent;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 0;
+	width: auto;
+	cursor: pointer;
+	border: none;
+	border-bottom: 1px solid #FFF !important;
+	font-size: 1.75rem;
+	padding: 0 3px;
+	color: var(--bs-warning);
+	font-weight: 300;
+}
+
+#lawfirm-inline input:focus { outline: none; }
+
+
+#lawfirm-inline select,
+.dark #lawfirm-inline select {
+	-webkit-appearance: none;
+	border-radius: 0;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-image: url("images/select-arrow.svg");
+	padding-right: 20px;
+	background-size: 12px;
+}
+
+#lawfirm-inline input::-moz-placeholder {
+	color: var(--bs-warning);
+}
+
+#lawfirm-inline input:-ms-input-placeholder {
+	color: var(--bs-warning);
+}
+
+#lawfirm-inline input::-webkit-input-placeholder {
+	color: var(--bs-warning);
+}
+
+.lawfirm-inline-loader.css3-spinner { background-color: rgba(255, 255, 255, 0.8) }
+
+#lawfirm-inline-submitted,
+.lawfirm-inline-success #lawfirm-inline,
+.lawfirm-inline-success .lawfirm-inline-heading,
+body:not(.lawfirm-inline-processing) .lawfirm-inline-loader { display: none; }
+
+.lawfirm-inline-success #lawfirm-inline-submitted { display: block; }
+
+.blog-cards .card::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--bs-warning);
+}
+
+.widget_links:not(.widget-li-noicon) li::before {
+	content: "\e77d";
+	font-size: 10px;
+	top: 4px;
+	color: var(--bs-warning);
+}
+
+.widget_links li {
+	padding: 6px 0;
+}
+
+/* ----------------------------------------------------------------
+	Fonts
+	Replace your Fonts as necessary
+-----------------------------------------------------------------*/
+
+body,
+h5,
+h6,
+small,
+#logo a,
+.menu-link,
+.mega-menu-style-2 .mega-menu-title > .menu-link,
+.sub-menu-container .menu-item > .menu-link,
+.wp-caption,
+.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body,
+.entry-link span,
+.entry blockquote p,
+.more-link,
+.comment-content .comment-author span,
+.comment-content .comment-author span a,
+.button.button-desc span,
+.testi-content p,
+.team-title span,
+.before-heading,
+.wedding-head .first-name span,
+.wedding-head .last-name span,
+.top-search-form input,
+.entry-link,
+.entry.entry-date-section span,
+.button.button-desc,
+.tab-nav-lg li a,
+.counter,
+label,
+.widget-filter-links li a,
+.nav-tree li a,
+.wedding-head,
+h1,
+h2,
+h3,
+h4,
+.font-primary  {
+	/*font-family: 'Manrope', sans-serif !important;*/
+}
+
+.font-secondary  {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+@media screen and (max-width:1400px) {
+	#logo img {height:55px !important;}
+}
+
+@media screen and (max-width:1200px) {
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+}
+
+@media screen and (max-width:900px) {
+	.slider-caption h2 {font-size:3rem;}
+	.slider-caption p {font-size:1.2rem}
+	#logo img {height:80px !important;}
+}
+
+@media screen and (max-width:768px) {
+	
+}
+
+@media screen and (max-width:600px) {
+
+}
+
+@media screen and (max-width:480px) {
+	.slider-caption h2 {font-size:2.5rem;}
+	#logo img {height:45px !important;}
+}
+
+@media screen and (max-width:320px) {
+	
+}

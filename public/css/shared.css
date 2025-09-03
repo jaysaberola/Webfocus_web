@@ -1,0 +1,61 @@
+/* shared.css */
+
+/* Font Definitions */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222; /* Primary text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #222; /* Primary heading color */
+}
+
+/* Color Definitions */
+/* Card Styling */
+.card {
+    background: var(--background);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px var(--shadow);
+    overflow: hidden;
+}
+
+/* Links and Buttons */
+a {
+    color: var(--primary-accent);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-accent);
+}
+
+.btn-custom {
+    background: var(--primary-accent);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: var(--hover-accent);
+}
+
+/* Social Buttons */
+.share-facebook, .social-facebook { background: var(--facebook); color: #fff; }
+.share-twitter, .social-twitter { background: var(--twitter); color: #fff; }
+.share-linkedin, .social-linkedin { background: var(--linkedin); color: #fff; }
+.share-copy { background: var(--primary-accent); color: #fff; }
+
+/* Text and Backgrounds */
+.text-secondary { color: var(--secondary-text); }
+.bg-content { background: var(--background); }
+.bg-page { background: var(--page-background); }

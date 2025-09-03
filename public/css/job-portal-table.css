@@ -1,0 +1,27 @@
+.job-portal-table th, .job-portal-table td {
+    vertical-align: middle !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.job-portal-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
+.job-portal-table tbody tr:hover {
+    background: #f1f3f5;
+    transition: background 0.2s;
+}
+.table-options .btn, .table-options .nav-link {
+    padding: 0 0.5rem;
+    color: #495057;
+}
+.table-options .btn:hover, .table-options .nav-link:hover {
+    color: #007bff;
+    background: none;
+}
+.job-portal-table .custom-control-label::before {
+    top: 0.1rem;
+}
