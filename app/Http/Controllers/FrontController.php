@@ -383,4 +383,11 @@ class FrontController extends Controller
         $footer = Page::where('slug', 'footer')->where('name', 'footer')->first();
         return view('theme.pages.services-dms', compact('footer', 'page', 'breadcrumb'));
     }
+
+    public function portfolio() {
+        $page = new Page();
+        $page->name = 'Portfolio';
+
+        return view('theme.pages.portfolio.index', compact('page'));
+    }
 }
