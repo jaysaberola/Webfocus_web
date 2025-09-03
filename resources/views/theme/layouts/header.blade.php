@@ -27,7 +27,7 @@
                 <div class="d-flex align-items-center">
                     <!-- Learn More Button -->
                     <a href="{{ url('/services') }}" class="btn-learnmore d-none d-lg-inline-flex">
-                        Subcriptions <span class="arrow">→</span>
+                        Subscribe <span class="arrow">→</span>
                     </a>
 
                     <!-- Mobile Menu Trigger -->
@@ -50,7 +50,7 @@
                 </nav>
                 <!-- Mobile Learn More Button -->
                 <a href="{{ url('/services') }}" class="btn-learnmore w-100 text-center d-lg-none">
-                    Subscriptions <span class="arrow">→</span>
+                    Subscribe <span class="arrow">→</span>
                 </a>
             </div>
 
@@ -106,7 +106,11 @@
     text-decoration:none; transition:all 0.3s ease; position:relative; overflow:hidden;
 }
 .btn-learnmore .arrow { transition: transform 0.3s ease; }
-.btn-learnmore:hover { background:#d97f12; box-shadow:0 6px 12px rgba(0,0,0,0.15); }
+.btn-learnmore:hover { 
+    color: var(--cnvs-primary-menu-active-color);
+    border: 1px solid var(--cnvs-primary-menu-active-color);
+    background-color: white;
+}
 .btn-learnmore:hover .arrow { transform: translateX(4px); }
 
 /* ===== Mobile SVG Trigger ===== */
