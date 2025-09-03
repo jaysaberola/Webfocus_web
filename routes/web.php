@@ -54,6 +54,9 @@ use App\Http\Controllers\MailingList\{SubscriberController, GroupController, Cam
 
     Route::get('/search-result',[FrontController::class, 'seach_result'])->name('search.result');
 
+    // Portfolio
+    Route::get('/portfolio', [FrontController::class, 'portfolio'])->name('portfolio');
+
     //News Frontend
         Route::get('/news/', [ArticleFrontController::class, 'news_list'])->name('news.front.index');
         Route::get('/news/{slug}', [ArticleFrontController::class, 'news_view'])->name('news.front.show');
