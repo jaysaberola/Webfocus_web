@@ -33602,21 +33602,26 @@ ul.menu-container li.menu-item.sub-menu a i.sub-menu-indicator.fa-solid.fa-caret
   display: block !important;
 }
 .wf-btn {
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 22px;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    color: #ff7e00 !important;
-    background-color: white !important;
-    border: 1px solid #ff7e00;
-    border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 22px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #ff7e00 !important;
+  background-color: white !important;
+  border: 1px solid #ff7e00;
+  border-radius: 50px;
 }
 .wf-btn:hover {
     color: white !important;
     background-color: #ff7e00 !important;
+}
+.wf-title-font {
+  color: #ff7e00;
+  font-size: 24px;
+  font-weight: 700;
 }
