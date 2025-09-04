@@ -13287,8 +13287,10 @@ textarea.form-control-lg {
   --cnvs-black:	#000;
   --cnvs-headings-font-weight:	600;
   /* Font Families */
-  --cnvs-body-font:	"Inter", sans-serif;
-  --cnvs-primary-font:	"Inter", sans-serif;
+  /*--cnvs-body-font: "Inter", sans-serif;*/
+  --cnvs-body-font:	"Montserrat", sans-serif;
+  /*--cnvs-primary-font:  "Inter", sans-serif;*/
+  --cnvs-primary-font:	"Montserrat", sans-serif;
   --cnvs-secondary-font:	"Playfair Display", serif;
   --cnvs-line-height-base:	1.5;
   --cnvs-line-height-content:	1.65;
@@ -33611,6 +33613,8 @@ ul.menu-container li.menu-item.sub-menu a i.sub-menu-indicator.fa-solid.fa-caret
     overflow: hidden;
     color: #ff7e00 !important;
     background-color: white !important;
+    border: 1px solid #ff7e00;
+    border-radius: 50px;
 }
 .wf-btn:hover {
     color: white !important;
