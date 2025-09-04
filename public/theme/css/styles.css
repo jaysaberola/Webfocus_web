@@ -33587,6 +33587,9 @@ ul.sub-menu-container > li.menu-item > a.menu-link:hover {
   transform: none;
   background-color: transparent !important;
 }
+ul.sub-menu-container > li.menu-item > a.menu-link {
+  text-align: start;
+}
 ul.menu-container li.menu-item.sub-menu a i.sub-menu-indicator.fa-solid.fa-caret-down {
   transform: translate(26px, 4px);
 }
@@ -33595,4 +33598,21 @@ ul.menu-container li.menu-item.sub-menu a i.sub-menu-indicator.fa-solid.fa-caret
 }
 #mobile-menu-dropdown nav.mobile-primary-menu li.menu-item.sub-menu ul.sub-menu-container.d-none {
   display: block !important;
+}
+.wf-btn {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 22px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #ff7e00 !important;
+    background-color: white !important;
+}
+.wf-btn:hover {
+    color: white !important;
+    background-color: #ff7e00 !important;
 }
