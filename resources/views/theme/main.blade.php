@@ -31,6 +31,9 @@
 	<link rel="stylesheet" href="{{ asset('theme/css/jssocials.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('theme/css/jssocials-theme-plain.css') }}" type="text/css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     @if(isset($page))
     	<style>
             @php
@@ -66,22 +69,19 @@
 	<div id="wrapper">
 		@include('theme.layouts.header')
 
-<div class="modal-on-load" data-target="#myModal1"></div>
-<!-- Modal -->
-<div class="modal1 mfp-hide" id="myModal1">
-    <div class="block mx-auto" style="background-color: #FFF; max-width: 500px;">
-        <div class="center" style="padding: 50px;">
-            <h3>Welcome to WebFocus Solutions!</h3>
-            <p class="mb-0">Discover what makes us unique! Explore our innovative services, stay updated with the latest industry news, or join our team by checking out exciting career opportunities.</p>
-        </div>
-        <div class="section center m-0" style="padding: 30px;">
-            <a href="#" class="button" onClick="$.magnificPopup.close();return false;">Exit
-</a>
-        </div>
-    </div>
-</div>
-
-
+		<div class="modal-on-load" data-target="#myModal1"></div>
+			<!-- Modal -->
+			<div class="modal1 mfp-hide" id="myModal1">
+			    <div class="block mx-auto" style="background-color: #FFF; max-width: 500px;border-radius: 16px;">
+			        <div class="center" style="padding: 50px;">
+			            <h3 style="font-size: 24px; font-weight: 700; padding-bottom: 18px;">Welcome to <span style="color: #ff7e00;">WebFocus</span> Solutions!</h3>
+			            <p class="mb-0" style="opacity: .8;">Discover what makes us unique! Explore our innovative services, stay updated with the latest industry news, or join our team by checking out exciting career opportunities.</p>
+			        </div>
+			        <div class="section center m-0" style="padding: 18px;border-bottom-left-radius: 16px;border-bottom-right-radius: 16px;">
+			            <a href="#" class="wf-btn" onClick="$.magnificPopup.close();return false;">Got it! </a>
+			        </div>
+			    </div>
+			</div>
 
 		<!-- Content
 		============================================= -->

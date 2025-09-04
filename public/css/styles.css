@@ -13287,8 +13287,10 @@ textarea.form-control-lg {
   --cnvs-black:	#000;
   --cnvs-headings-font-weight:	600;
   /* Font Families */
-  --cnvs-body-font:	"Inter", sans-serif;
-  --cnvs-primary-font:	"Inter", sans-serif;
+  /*--cnvs-body-font: "Inter", sans-serif;*/
+  --cnvs-body-font:	"Montserrat", sans-serif;
+  /*--cnvs-primary-font:  "Inter", sans-serif;*/
+  --cnvs-primary-font:	"Montserrat", sans-serif;
   --cnvs-secondary-font:	"Playfair Display", serif;
   --cnvs-line-height-base:	1.5;
   --cnvs-line-height-content:	1.65;
