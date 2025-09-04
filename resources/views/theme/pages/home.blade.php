@@ -140,6 +140,21 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .sub-title-extra {
+            font-family: 'times new roman';
+            font-size: 24px;
+            opacity: .8;
+        }
+        .qoute-svg {
+            position: absolute;
+            top: -45px;
+            left: -36px;
+            height: 10rem !important;
+            z-index: 0;
+            opacity: .1;
+            transform: scaleX(-1);
+        }
     </style>
 @endsection
 
@@ -156,9 +171,15 @@
                 <div class="container">
                     <div class="row col-mb-50">
                         <div class="col-lg-5">
-                            <h1 class="display-4 fw-bold pop-animate slide-left">Build your own Future with <span class="circle-draw"><span>Webfocus</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span>.</h1>
-                            <h2 class="pop-animate slide-left stagger-1">Your solution in innovative digital transformation</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"We are at the forefront of Digital IT Solutions in the Philippines. Find out why and how we can provide you value."</p>
+                            <h1 class="display-4 fw-bold pop-animate slide-left">Build your own <br /> Future with <br /> <span class="circle-draw"><span>Webfocus</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
+                            <small class="pop-animate slide-left stagger-1"><i>Your solution in innovative digital transformation.</i></small>
+                            <br />
+                            <p class="mt-5 sub-title-extra position-relative">
+                                <svg class="w-40 h-40 qoute-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                  <path fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z" clip-rule="evenodd"/>
+                                </svg>
+                                    <i>We are at the forefront of Digital IT Solutions <br /> in the Philippines. Find out why and how <br /> we can provide you value.</i>
+                            </p>
                         </div>
                         <div class="col-lg-7">
                             <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Image" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
@@ -219,7 +240,7 @@
                             <div class="card-body">
                                 <h2 class="text-transform-none fw-semibold h5 mb-3">Domain</h2>
                                 <p class="mb-4">We can help you elevate your business online, and there is no better way to start than choosing your domain name, one that is unique and fully represents your business.</p>
-                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
+                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0 wf-btn">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -229,7 +250,7 @@
                             <div class="card-body">
                                 <h2 class="text-transform-none fw-semibold h5 mb-3">Email and Web Hosting</h2>
                                 <p class="mb-4">We offer powerful hosting solutions that are affordable and can store websites with fully integrated Internet solutions for both small and big organizations.</p>
-                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
+                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0 wf-btn">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -239,7 +260,7 @@
                             <div class="card-body">
                                 <h2 class="text-transform-none fw-semibold h5 mb-3">Web Development</h2>
                                 <p class="mb-4">Design the system, Automate the process, Transform your business. We cater a wide range of custom-built web solutions that transform business processes on the web.</p>
-                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
+                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0 wf-btn">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -249,7 +270,7 @@
                             <div class="card-body">
                                 <h2 class="text-transform-none fw-semibold h5 mb-3">Pre-made Niche Demos</h2>
                                 <p class="mb-4">Powerful Layout with Responsive functionality that can be adapted.</p>
-                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
+                                <a href="#" class="button button-small button-light button-border border-color h-bg-color rounded-pill text-dark m-0 wf-btn">Learn More <i class="bi-arrow-right me-0 ms-1"></i></a>
                             </div>
                         </div>
                     </div>
