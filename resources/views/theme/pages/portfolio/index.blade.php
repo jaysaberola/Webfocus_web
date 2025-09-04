@@ -79,6 +79,16 @@
 	    .block-testimonials-3 .swiper-wrapper {
 	    	cursor: ew-resize !important;
 	    }
+
+	    .svg-wapper-icon {
+	    	display: flex;
+	    	align-items: center;
+    		justify-content: center;
+	    }
+
+	    .portfolio-desc.p-3 h3 > a {
+	    	font-weight: 600;
+	    }
 </style>
    
 @endsection
@@ -98,7 +108,7 @@
 					<div class="grid-filter-wrap mb-4">
 
 						<div class="d-flex flex-column w-50">
-							<h1 class="mb-0" style="color: #ff7e00;">Our Portfolio</h1>
+							<h1 class="mb-0 wf-title-font">Our Portfolio</h1>
 							<small style="max-width: 80%; opacity: .8;">
 								It has been proven time and time again that we deliver great value for clients who acquire our I.T. services.
 							</small>
@@ -117,7 +127,7 @@
 
 					<!-- Portfolio Items
 					============================================= -->
-					<div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+					<div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows" style="padding-bottom: 18px;">
 
 						<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-tech">
 							<div class="grid-inner card shadow">
@@ -127,7 +137,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/clinica.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Clinica Manila"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/clinica.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Clinica Manila">
+												 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												   <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												 </svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -147,7 +161,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/exp.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Exponent Controls"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/exp.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Exponent Controls">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -167,7 +185,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/lydias.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Ludias Lechon"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/lydias.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Ludias Lechon">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -187,7 +209,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/precious.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Precious Pages Bookstore"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/precious.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Precious Pages Bookstore">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -207,7 +233,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/taikisha.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Taikisha"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/taikisha.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Taikisha">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -227,7 +257,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/taisho.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Taisho"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/taisho.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Taisho">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -247,7 +281,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/upv.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="UP Vanguard"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/upv.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="UP Vanguard">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -267,7 +305,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/modair.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Modair"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/modair.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Modair">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -287,7 +329,11 @@
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="images/portfolio/stpauls.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="St. Pauls"><i class="uil uil-search"></i></a>
+											<a href="images/portfolio/stpauls.png" class="overlay-trigger-icon bg-light text-dark svg-wapper-icon" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="St. Pauls">
+												<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+												  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+												</svg>
+											</a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -308,7 +354,7 @@
 				<div id="Clients">
 					<div class="section rounded">
 
-						<h3 class="text-center" style="color: #ff7e00;">Brands we've worked with</h3>
+						<h3 class="text-center wf-title-font">Brands we've worked with</h3>
 
 						<div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30" data-nav="true" data-pagi="false" data-autoplay="5000" data-items-xs="3" data-items-sm="3" data-items-md="5" data-items-lg="6" data-items-xl="7">
 							<div class="oc-item"><a href="#"><img src="images/clients/logo37.jpg" alt="Brands"></a></div>
@@ -347,7 +393,7 @@
 							<div class="row">
 								<div class="col-12">
 									<img class="rounded-circle mx-auto w-auto mb-4" src="images/user2.png" width="64" height="64" alt="Customer Testimonails">
-									<h3 class="mb-4 lh-base fw-normal font-secondary">I was impressed by how quickly and professionally the team delivered our site. They understood exactly what we needed, added features we hadn’t even thought of, and made the whole process stress-free. Highly recommend their web development services.</h3>
+									<h3 class="mb-4 lh-base fw-normal font-secondary" style="font-size: 26px;">I was impressed by how quickly and professionally the team delivered our site. They understood exactly what we needed, added features we hadn’t even thought of, and made the whole process stress-free. Highly recommend their web development services.</h3>
 								</div>
 								<div class="d-flex align-items-center justify-content-center">
 									<div>
@@ -360,7 +406,7 @@
 							<div class="row">
 								<div class="col-12">
 									<img class="rounded-circle mx-auto w-auto mb-4" src="images/user3.png" width="64" height="64" alt="Customer Testimonails">
-									<h3 class="mb-4 lh-base fw-normal font-secondary">Our old site was outdated and hard to manage, but now everything is clean, responsive, and easy to update. The attention to detail and customer support have been outstanding. It feels like we finally have a website we can be proud of.</h3>
+									<h3 class="mb-4 lh-base fw-normal font-secondary" style="font-size: 26px;">Our old site was outdated and hard to manage, but now everything is clean, responsive, and easy to update. The attention to detail and customer support have been outstanding. It feels like we finally have a website we can be proud of.</h3>
 								</div>
 								<div class="d-flex align-items-center justify-content-center">
 									<div>
@@ -373,7 +419,7 @@
 							<div class="row">
 								<div class="col-12">
 									<img class="rounded-circle mx-auto w-auto mb-4" src="images/user4.png" width="64" height="64" alt="Customer Testimonails">
-									<h3 class="mb-4 lh-base fw-normal font-secondary">Working with WebFocus was a game-changer for our business. They built us a modern, user-friendly website that not only looks amazing but also runs smoothly. Our customers love the new design, and we’ve seen a noticeable boost in inquiries since launch.</h3>
+									<h3 class="mb-4 lh-base fw-normal font-secondary" style="font-size: 26px;">Working with WebFocus was a game-changer for our business. They built us a modern, user-friendly website that not only looks amazing but also runs smoothly. Our customers love the new design, and we’ve seen a noticeable boost in inquiries since launch.</h3>
 								</div>
 								<div class="d-flex align-items-center justify-content-center">
 									<div>
