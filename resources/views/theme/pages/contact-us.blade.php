@@ -23,48 +23,48 @@
             transform: scale(0.8) translateY(30px);
             transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        
+
         .pop-animate.animate {
             opacity: 1;
             transform: scale(1) translateY(0);
         }
-        
+
         /* Stagger animation for multiple elements */
         .pop-animate.stagger-1 { transition-delay: 0.1s; }
         .pop-animate.stagger-2 { transition-delay: 0.2s; }
         .pop-animate.stagger-3 { transition-delay: 0.3s; }
         .pop-animate.stagger-4 { transition-delay: 0.4s; }
         .pop-animate.stagger-5 { transition-delay: 0.5s; }
-        
+
         /* Different animation types */
         .pop-animate.slide-up {
             transform: translateY(50px);
         }
-        
+
         .pop-animate.slide-up.animate {
             transform: translateY(0);
         }
-        
+
         .pop-animate.slide-left {
             transform: translateX(-50px);
         }
-        
+
         .pop-animate.slide-left.animate {
             transform: translateX(0);
         }
-        
+
         .pop-animate.slide-right {
             transform: translateX(50px);
         }
-        
+
         .pop-animate.slide-right.animate {
             transform: translateX(0);
         }
-        
+
         .pop-animate.rotate {
             transform: rotate(-10deg) scale(0.8);
         }
-        
+
         .pop-animate.rotate.animate {
             transform: rotate(0deg) scale(1);
         }
@@ -84,10 +84,15 @@
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .contact-hero h1 .circle-draw {
             position: relative;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         .contact-hero h1 .circle-draw svg {
             position: absolute;
@@ -97,6 +102,10 @@
             width: 100%;
             height: auto;
             z-index: -1;
+        }
+        .contact-hero h1 .circle-draw span {
+            position: relative;
+            z-index: 1;
         }
         .contact-hero p {
             font-size: 1.1rem;
@@ -267,13 +276,10 @@
             <div class="contact-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 offset-lg-3 text-center">
                             <h1 class="display-4 fw-bold pop-animate slide-left">Contact <span class="circle-draw"><span>Us</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
-                            <h2 class="pop-animate slide-left stagger-1">Get in touch with us for support or inquiries</h2>
+                            <h3 class="pop-animate slide-left stagger-1">Get in touch with us for support or inquiries</h3>
                             <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"We're here to help you with any questions or concerns. Reach out to us and we'll get back to you as soon as possible."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Contact Us" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
                         </div>
                     </div>
                 </div>
@@ -281,81 +287,99 @@
         </div>
 
         <div class="container contact-container">
-    <!-- Contact Details -->
-    <div class="contact-info pop-animate slide-up">
-        <h2>Contact Details</h2>
-        <p>Get in touch with us via any of the following ways. Our team is happy to assist you!</p>
+            <!-- Contact Details -->
+            <div class="contact-info pop-animate slide-up">
+                <h2>Contact Details</h2>
+                <p>Get in touch with us via any of the following ways. Our team is happy to assist you!</p>
 
-        <div class="contact-items">
-            <div class="contact-item pop-animate stagger-1">
-                <i class="bi bi-envelope"></i>
-                <div class="contact-text">
-                    <span>Email</span>
-                    <p>Customer Care: customercare@webfocus.ph</p>
-                    <p>Tech Support: support@webfocus.ph</p>
+                <div class="contact-items">
+                    <div class="contact-item pop-animate stagger-1">
+                        <i class="bi bi-envelope"></i>
+                        <div class="contact-text">
+                            <span>Email</span>
+                            <p>Sales: sales@webfocus.ph</p>
+                            <p>Marketing: marketing@webfocus.ph</p>
+                            <p>Billing: billing@webfocus.ph</p>
+                            <p>Customer Care: customercare@webfocus.ph</p>
+                            <p>Tech Support: support@webfocus.ph</p>
+                        </div>
+                    </div>
+                    <div class="contact-item pop-animate stagger-2">
+                        <i class="bi bi-telephone"></i>
+                        <div class="contact-text">
+                            <span>Telephone</span>
+                            <p>+63 (2) 8706-6144</p>
+                            <p>+63 (2) 8706-5796</p>
+                            <p>+63 (2) 8511-0528</p>
+                            <p>+63 (2) 8709-8061</p>
+                            <p>+63 (2) 8806-5201</p>
+                        </div>
+                    </div>
+                    <div class="contact-item pop-animate stagger-2">
+                        <i class="bi bi-phone"></i>
+                        <div class="contact-text">
+                            <span>Mobile</span>
+                            <p>+63 908 869 4069 (Smart)</p>
+                            <p>+63 917 569 7380 (Globe)</p>
+                            <p>+63 922 330 8373 (Sun Cellular)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item pop-animate stagger-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <div class="contact-text">
+                            <span>Our Office</span>
+                            <p>Unit 907-909 Antel Global Corporate Center, Julia Vargas Avenue, Ortigas Center, Pasig City, Philippines</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Map under Our Office -->
+                <div id="contactMap" class="pop-animate stagger-4"></div>
             </div>
-            <div class="contact-item pop-animate stagger-2">
-                <i class="bi bi-telephone"></i>
-                <div class="contact-text">
-                    <span>Phone</span>
-                    <p>+1 234 567 890</p>
-                </div>
-            </div>
-            <div class="contact-item pop-animate stagger-3">
-                <i class="bi bi-geo-alt"></i>
-                <div class="contact-text">
-                    <span>Our Office</span>
-                    <p>Ground Floor, Antel Global Corporate Center, 1605 Doña Julia Vargas Ave, Ortigas Center, Pasig, Metro Manila</p>
-                </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form pop-animate slide-up">
+                @if(session()->has('success'))
+                    <div class="message-box success">
+                        <i class="bi bi-check-circle"></i> {{ session()->get('success') }}
+                    </div>
+                @endif
+                @if(session()->has('error'))
+                    <div class="message-box error">
+                        <i class="bi bi-exclamation-circle"></i> {{ session()->get('error') }}
+                    </div>
+                @endif
+
+                <h3>Leave Us a Message</h3>
+                <p class="note"><strong>Note:</strong> Please do not leave required fields (*) empty.</p>
+
+                <form id="contactUsForm" action="{{ route('contact-us') }}" method="post">
+                    @csrf
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="text-danger">*</span></label>
+                        <input type="text" id="fullName" name="name" placeholder="First and Last Name" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Email <span class="text-danger">*</span></label>
+                        <input type="email" id="emailAddress" name="email" placeholder="hello@example.com" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number <span class="text-danger">*</span></label>
+                        <input type="text" id="contactNumber" name="contact" placeholder="+1 234 567 890" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="text-danger">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                        <div class="g-recaptcha" data-sitekey="{{ \Setting::info()->google_recaptcha_sitekey }}"></div>
+                        <label class="control-label text-danger" id="catpchaError" style="display:none;font-size: 14px;">Captcha is required.</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
-
-        <!-- Map under Our Office -->
-        <div id="contactMap" class="pop-animate stagger-4"></div>
-    </div>
-
-    <!-- Contact Form -->
-    <div class="contact-form pop-animate slide-up">
-        @if(session()->has('success'))
-            <div class="message-box success">
-                <i class="bi bi-check-circle"></i> {{ session()->get('success') }}
-            </div>
-        @endif
-        @if(session()->has('error'))
-            <div class="message-box error">
-                <i class="bi bi-exclamation-circle"></i> {{ session()->get('error') }}
-            </div>
-        @endif
-
-        <h3>Leave Us a Message</h3>
-        <p class="note"><strong>Note:</strong> Please do not leave required fields (*) empty.</p>
-
-        <form id="contactUsForm" action="{{ route('contact-us') }}" method="post">
-            @csrf
-            <div class="form-group">
-                <label for="fullName">Full Name <span class="text-danger">*</span></label>
-                <input type="text" id="fullName" name="name" placeholder="First and Last Name" required/>
-            </div>
-            <div class="form-group">
-                <label for="emailAddress">Email <span class="text-danger">*</span></label>
-                <input type="email" id="emailAddress" name="email" placeholder="hello@example.com" required/>
-            </div>
-            <div class="form-group">
-                <label for="contactNumber">Contact Number <span class="text-danger">*</span></label>
-                <input type="text" id="contactNumber" name="contact" placeholder="+1 234 567 890" required/>
-            </div>
-            <div class="form-group">
-                <label for="message">Message <span class="text-danger">*</span></label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-            </div>
-            <div class="form-group">
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                <div class="g-recaptcha" data-sitekey="{{ \Setting::info()->google_recaptcha_sitekey }}"></div>
-                <label class="control-label text-danger" id="catpchaError" style="display:none;font-size: 14px;">Captcha is required.</label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
     </div>
 </section>
 @endsection
@@ -379,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     L.marker([14.5821, 121.0616], {icon: redIcon})
         .addTo(map)
-        .bindPopup('<b>WebFocus Office</b><br>Ground Floor, Antel Global Corporate Center, 1605 Doña Julia Vargas Ave, Ortigas Center, Pasig, Metro Manila')
+        .bindPopup('<b>WebFocus Office</b><br>Unit 907-909 Antel Global Corporate Center, Julia Vargas Avenue, Ortigas Center, Pasig City, Philippines')
         .openPopup();
 });
 
@@ -408,7 +432,7 @@ $(document).ready(function () {
             var elementBottom = elementTop + $this.outerHeight();
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
-            
+
             // Check if element is in viewport
             if (elementBottom > viewportTop && elementTop < viewportBottom) {
                 $this.addClass('animate');

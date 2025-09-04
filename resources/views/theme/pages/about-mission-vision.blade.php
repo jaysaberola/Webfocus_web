@@ -179,20 +179,19 @@
 
         <div class="position-relative">
             <!-- Hero Header -->
-            <div class="about-hero mb-md-6">
+
+        <div class="services-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 fw-bold pop-animate slide-left">Mission & <span class="circle-draw"><span>Vision</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
+                        <div class="col-12 text-center">
+                            <h1 class="display-4 fw-bold pop-animate slide-left">Mission &<span class="circle-draw"><span>Vision</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Guiding our journey to empower businesses through innovation</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"To develop and provide customized, scalable, modular, and cost-effective IT solutions."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Mission & Vision" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
+                            <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">"To develop and provide customized, scalable, modular, and cost-effective IT solutions."</h3>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- About Content -->
             <div class="section-about">
@@ -205,12 +204,12 @@
                             <p class="pop-animate slide-up stagger-3">To provide highly-skilled I.T. professionals and dedicated 24/7 support to ensure customer security and customer satisfaction.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/1.jpg') }}" alt="Our Mission" class="pop-animate slide-right">
+                            <img src="{{ asset('images/landing-2/images/services/mission.jpg') }}" alt="Our Mission" class="pop-animate slide-right">
                         </div>
                     </div>
                     <div class="row col-mb-50">
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/2.jpg') }}" alt="Our Vision" class="pop-animate slide-left">
+                            <img src="{{ asset('images/landing-2/images/services/vission.jpg') }}" alt="Our Vision" class="pop-animate slide-left">
                         </div>
                         <div class="col-lg-6">
                             <h2 class="pop-animate slide-up">Our Vision</h2>

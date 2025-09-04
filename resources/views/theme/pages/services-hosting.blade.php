@@ -76,7 +76,7 @@
         .services-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 7rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -237,16 +237,14 @@
 
         <div class="position-relative">
             <!-- Hero Header -->
+
             <div class="services-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 fw-bold pop-animate slide-left"><span class="circle-draw"><span>Hosting</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
+                        <div class="col-12 text-center">
+                            <h1 class="display-4 fw-bold pop-animate slide-left"><span class="circle-draw"><span>Hosting Services</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Scalable and reliable hosting solutions for your business</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"Our Shared Cloud Hosting service is designed to provide start-up businesses with cost-effective and high-performance hosting solutions."</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Hosting" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
+                            <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">"Our Shared Cloud Hosting service is designed to provide start-up businesses with cost-effective and high-performance hosting solutions."</h3>
                         </div>
                     </div>
                 </div>
@@ -261,7 +259,7 @@
                             <p class="pop-animate slide-up stagger-1">With our Shared Cloud Hosting service, multiple accounts share resources under a single server. This form of hosting service perfectly fits start-up businesses as we offer small scale storage and data cap under the packages of this hosting service. The volume of accounts under our shared hosting servers is at a minimum to ensure that we maintain the optimum performance of our servers while you maximize the usage of your resources. We have three shared cloud hosting packages for you to choose from.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/services/1.jpg') }}" alt="Shared Cloud Hosting" class="pop-animate slide-right">
+                            <img src="{{ asset('images/landing-2/images/services/hosting.jpg') }}" alt="Shared Cloud Hosting" class="pop-animate slide-right">
                         </div>
                     </div>
                 </div>
@@ -273,7 +271,7 @@
                     <div class="hosting-packages">
                         <!-- Standard Package -->
                         <div class="hosting-package pop-animate slide-up stagger-1">
-                            <img src="{{ asset('images/landing-2/images/services/2.jpg') }}" alt="Standard Package" class="pop-animate slide-up">
+                            <img src="{{ asset('images/landing-2/images/services/standard.jpg') }}" alt="Standard Package" class="pop-animate slide-up">
                             <h3>Standard</h3>
                             <ul>
                                 <li>6 GB Allocated Storage</li>
@@ -301,7 +299,10 @@
 
                         <!-- Deluxe Package -->
                         <div class="hosting-package pop-animate slide-up stagger-2">
-                            <img src="{{ asset('images/landing-2/images/services/3.jpg') }}" alt="Deluxe Package" class="pop-animate slide-up">
+                           <img src="{{ asset('images/landing-2/images/services/deluxe.jpg') }}"  
+                            alt="Deluxe Package" 
+                            class="pop-animate slide-up" 
+                            style="height: 30.5%; width: auto;">
                             <h3>Deluxe</h3>
                             <ul>
                                 <li>9 GB Allocated Storage</li>
@@ -329,7 +330,9 @@
 
                         <!-- Business Package -->
                         <div class="hosting-package pop-animate slide-up stagger-3">
-                            <img src="{{ asset('images/landing-2/images/services/4.jpg') }}" alt="Business Package" class="pop-animate slide-up">
+                            <img src="{{ asset('images/landing-2/images/services/business.jpg') }}" alt="Business Package" 
+                            class="pop-animate slide-up" 
+                            style="height: 30.5%; width: auto;">
                             <h3>Business</h3>
                             <ul>
                                 <li>12 GB Allocated Storage</li>

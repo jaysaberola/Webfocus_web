@@ -76,7 +76,7 @@
         .services-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 7rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -259,7 +259,7 @@
                         <div class="col-12 text-center">
                             <h1 class="display-4 fw-bold pop-animate slide-left"><span class="circle-draw"><span>Web Development</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Creative and effective web design services for all businesses</h2>
-                            <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">"WebFocus Solutions, Inc. builds tailored, fast-loading, and user-friendly websites to help your business stand out."</p>
+                            <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">"WebFocus Solutions, Inc. builds tailored, fast-loading, and user-friendly websites to help your business stand out."</h3>
                         </div>
                     </div>
                 </div>
@@ -268,10 +268,10 @@
             <!-- Website Development Packages Section -->
             <div class="section-services">
                 <div class="container">
-                    <div class="website-packages">
+                    <div class="website-packages" style="display: flex; gap: 20px; align-items: stretch;">
                         <!-- WordPress Website Development -->
-                        <div class="website-package pop-animate slide-up stagger-1">
-                            <img src="{{ asset('images/landing-2/images/services/1.jpg') }}" alt="WordPress Website Development" class="pop-animate slide-up">
+                        <div class="website-package pop-animate slide-up stagger-1" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <img src="{{ asset('images/landing-2/images/services/wordpress.png') }}" alt="WordPress Website Development" class="pop-animate slide-up" style="max-width: 100%; height: auto;">
                             <h3>WordPress Website Development</h3>
                             <p class="pop-animate slide-up stagger-2">Our WordPress website development service offers a robust and user-friendly solution for businesses looking to establish a strong online presence. With a focus on flexibility and ease of use, we create websites that are both visually appealing and functional.</p>
                             <ul class="pop-animate slide-up stagger-3">
@@ -289,8 +289,8 @@
                         </div>
 
                         <!-- Premium Website Development -->
-                        <div class="website-package pop-animate slide-up stagger-1">
-                            <img src="{{ asset('images/landing-2/images/services/2.jpg') }}" alt="Premium Website Development" class="pop-animate slide-up">
+                        <div class="website-package pop-animate slide-up stagger-1" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <img src="{{ asset('images/landing-2/images/services/cms.jpg') }}" alt="Premium Website Development" class="pop-animate slide-up" style="max-width: 100%; height: 25.3%;">
                             <h3>Premium Website Development</h3>
                             <p class="pop-animate slide-up stagger-2">Our premium website development service is tailored for businesses that require a custom-built solution with advanced features. We provide a fully customized CMS to give you complete control over your website's content and functionality.</p>
                             <ul class="pop-animate slide-up stagger-3">
@@ -310,13 +310,21 @@
                     </div>
                 </div>
             </div>
+            <div class="section-services">
+                <div class="container">
+                    <div class="row col-mb-50">
+                        <div class="col-12">
+                            <h2 class="pop-animate slide-up">E-Commerce</h2>
+                            <p class="pop-animate slide-up stagger-1">WebFocus provides secure and efficient e-commerce solutions, from simple online stores to advanced B2B platforms. With SSL encryption and fast payment processing, buying and selling online is safe, quick, and convenient.</p>      
+                         </div>
+                         </div>
+                </div>
 
             <!-- Why Choose WebFocus Solutions Section -->
             <div class="section-services">
                 <div class="container">
                     <div class="row col-mb-50">
-                        <div class="col-12 single-column">
-                            <img src="{{ asset('images/landing-2/images/services/3.jpg') }}" alt="Why Choose WebFocus" class="pop-animate slide-up">
+                        <div class="col-12">
                             <h2 class="pop-animate slide-up">Why Choose WebFocus Solutions</h2>
                             <p class="pop-animate slide-up stagger-1">Who do you need? A web designer or a web programmer? Luckily, we have both! If you want an artsy web design, we can use up all of our creative juices just for you. If you prefer a geeky website, we can speak the programming language for your satisfaction.</p>
                             <p class="pop-animate slide-up stagger-2">Your website has to be functional, user-friendly, and informative. We understand your needs and know how to create a tailored web design that fits your business. Our designs are fast-loading, browser-compatible, easy-to-use, and visually appealing. At WebFocus Solutions, Inc., we don’t settle for template-based designs. We face the challenge of making every website one-of-a-kind because every company is unique, and every client is special.</p>
