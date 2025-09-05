@@ -2,17 +2,6 @@
 @extends('theme.main')
 
 @section('pagecss')
-      <!-- Bootstrap CSS (assumed to be in theme.main) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/font-icons.css') }}">
-
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         /* Match history page body styling */
         body {
@@ -76,7 +65,7 @@
         .services-hero {
             background: transparent;
             color: #333;
-            padding: 7rem 0;
+            padding: 9rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -299,9 +288,9 @@
 
                         <!-- Deluxe Package -->
                         <div class="hosting-package pop-animate slide-up stagger-2">
-                           <img src="{{ asset('images/landing-2/images/services/deluxe.jpg') }}"  
-                            alt="Deluxe Package" 
-                            class="pop-animate slide-up" 
+                           <img src="{{ asset('images/landing-2/images/services/deluxe.jpg') }}"
+                            alt="Deluxe Package"
+                            class="pop-animate slide-up"
                             style="height: 30.5%; width: auto;">
                             <h3>Deluxe</h3>
                             <ul>
@@ -330,8 +319,8 @@
 
                         <!-- Business Package -->
                         <div class="hosting-package pop-animate slide-up stagger-3">
-                            <img src="{{ asset('images/landing-2/images/services/business.jpg') }}" alt="Business Package" 
-                            class="pop-animate slide-up" 
+                            <img src="{{ asset('images/landing-2/images/services/business.jpg') }}" alt="Business Package"
+                            class="pop-animate slide-up"
                             style="height: 30.5%; width: auto;">
                             <h3>Business</h3>
                             <ul>

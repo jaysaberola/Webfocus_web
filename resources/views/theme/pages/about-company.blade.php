@@ -1,18 +1,6 @@
-
 @extends('theme.main')
 
 @section('pagecss')
-      <!-- Bootstrap CSS (assumed to be in theme.main) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/style.css') }}">
-     <link rel="stylesheet" href="{{ asset('theme/css/font-icons.css') }}">
-
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <style>
         /* Match home page body styling */
@@ -77,7 +65,7 @@
         .about-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 9rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -88,10 +76,15 @@
             margin-bottom: 5rem;
             position: relative;
             z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .about-hero h1 .circle-draw {
             position: relative;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         .about-hero h1 .circle-draw svg {
             position: absolute;
@@ -101,6 +94,10 @@
             width: 100%;
             height: auto;
             z-index: -1;
+        }
+        .about-hero h1 .circle-draw span {
+            position: relative;
+            z-index: 1;
         }
         .about-hero .lead {
             font-size: 1.1rem;
@@ -187,9 +184,7 @@
                             <h2 class="pop-animate slide-left stagger-1">Tailored solutions for your unique needs</h2>
                             <p class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2">"We believe in tailoring a service that suits your needs, whether it is for a website design or a web development project."</p>
                         </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('images/landing-2/images/browser-wf.png') }}" alt="Our Approach" class="shadow-lg rounded-6 pop-animate slide-right" width="720">
-                        </div>
+
                     </div>
                 </div>
             </div>
