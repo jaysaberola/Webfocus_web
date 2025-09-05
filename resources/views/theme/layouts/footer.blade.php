@@ -1,11 +1,10 @@
-<!-- Footer ============================================= -->
-<footer id="footer" class="text-orange-500 py-12 mt-8 relative" style="background-image: url('{{ asset('images/landing-2/images/footer2.svg') }}'); background-size: cover; background-position: center; transform: scaleX(-1);">
-    <div class="absolute inset-0 bg-white-100/100"></div> <!-- Overlay for readability -->
-    <div class="container mx-auto px-4 relative z-10" style="transform: scaleX(-1);"> <!-- Counter-transform for content -->
+<footer id="footer" class="text-orange-500 py-12 mt-8 relative" style="background-image: url('{{ asset('images/landing-2/images/footer2.svg') }}'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-white/90"></div> <!-- Overlay for readability -->
+    <div class="container mx-auto px-4 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Company Info & Social Media -->
             <div class="space-y-4">
-                <img src="images/landing-2/images/1679411331_wsi-logo.svg" alt="WebFocus Logo" class="h-16">
+                <img src="{{ asset('images/landing-2/images/1679411331_wsi-logo.svg') }}" alt="WebFocus Logo" class="h-16">
                 <p>We believe in Simple, Creative, Premium Quality & Flexible Design Standards.</p>
                 <h4 class="text-lg font-semibold">Follow Us</h4>
                 <div class="flex space-x-4">
@@ -20,14 +19,13 @@
                     </a>
                 </div>
                 <div class="flex space-x-2">
-                    <img src="images/landing-2/images/website-admired.png" alt="Website Admired Logo" class="h-25">
+                    <img src="{{ asset('images/landing-2/images/website-admired.png') }}" alt="Website Admired Logo" class="h-25">
                 </div>
                 <div class="flex space-x-4">
                     <h4 class="text-lg font-semibold">2018 ADMIRED BRAND</h4>
                 </div>
                 <p>FOR WEB DESIGN & DEVELOPMENT, IT. SOLUTIONS CATEGORY</p>
-                <p></p>
-                <img src="images/landing-2/images/sitelock.jpg" alt="SiteLock Logo" class="h-22">
+                <img src="{{ asset('images/landing-2/images/sitelock.jpg') }}" alt="SiteLock Logo" class="h-22">
             </div>
 
             <!-- Contact Information -->
@@ -129,6 +127,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Footer JS -->
-    <script src="js/plugins.min.js"></script>
-    <script src="js/functions.bundle.js"></script>
+    <script src="{{ asset('js/plugins.min.js') }}"></script>
+    <script src="{{ asset('js/functions.bundle.js') }}"></script>
 </footer>

@@ -13,6 +13,13 @@
 
 	<link rel="stylesheet" href="{{ asset('theme/css/bootstrap.css') }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset('theme/css/styles.css') }}" type="text/css" />
+      <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="{{ asset('css/font-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
+    <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
 	<link rel="stylesheet" href="{{ asset('theme/css/dark.css') }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset('theme/css/animate.css') }}" type="text/css" />
