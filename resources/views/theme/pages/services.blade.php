@@ -2,14 +2,6 @@
 @extends('theme.main')
 
 @section('pagecss')
-  <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{{ asset('css/font-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         /* Match history page body styling */
         body {
@@ -183,7 +175,7 @@
         .section-services td ul li:before {
             content: none;
         }
-        
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .services-hero h1 {
@@ -232,7 +224,7 @@
                 <div class="container">
                     <div class="row col-mb-50">
                         <div class="col-12 text-center">
-                            <h1 class="display-4 fw-bold pop-animate slide-left">Our<span class="circle-draw"><span>Services</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
+                            <h1 class="display-4 fw-bold pop-animate slide-left">Our <span class="circle-draw"><span> Services</span><svg xmlns="http://www.w3.org/2000/svg" width="510" height="119" viewBox="0 0 510 119"><path d="M98.269,102.723c191.518,50.4,433.149-14.254,403.627-69.23C469.212-.827,218,3,94,25.5S-30.549,100.9,109.5,115c138.587,5.83,313.427-3.644,362.5-34.5,30.5-19.177,82.988-57.915-47-74.937" transform="translate(-0.645 -3.32)" fill="none" stroke="var(--cnvs-themecolor)" stroke-linecap="round" stroke-width="4"></svg></span></h1>
                             <h2 class="pop-animate slide-left stagger-1">Comprehensive IT solutions for your business needs</h2>
                             <h3 class="border-start border-width-4 border-color ps-4 mw-xs mt-5 pop-animate slide-left stagger-2 mx-auto">Don't wait before someone else takes your ideal domain name! Choose from our diverse list of domains.</h3>
                         </div>
@@ -355,7 +347,7 @@
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 </section>

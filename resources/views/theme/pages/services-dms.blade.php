@@ -2,17 +2,6 @@
 @extends('theme.main')
 
 @section('pagecss')
-    <!-- Bootstrap CSS (assumed to be in theme.main) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/font-icons.css') }}">
-
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <style>
         /* Match history page body styling */
@@ -189,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Document Management System Overview Section -->
             <div class="section-services">
                 <div class="container">

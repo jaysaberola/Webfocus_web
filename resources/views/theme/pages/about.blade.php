@@ -1,14 +1,7 @@
 @extends('theme.main')
 
 @section('pagecss')
-    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{{ asset('css/font-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
     <style>
         /* Match history page body styling */
         body {
@@ -264,18 +257,18 @@
             </div>
 
             <!-- About Content -->
-            
+
 
             <div class="section-services">
     <div class="container">
         <div class="website-packages" style="display: flex; gap: 20px; align-items: stretch;">
-            
+
             <!-- Web Design & Development -->
-            <div class="website-package pop-animate slide-up stagger-1" 
+            <div class="website-package pop-animate slide-up stagger-1"
                  style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #fff;">
-                <img src="{{ asset('images/landing-2/images/services/webdev.png') }}" 
-                     alt="WordPress Website Development" 
-                     class="pop-animate slide-up" 
+                <img src="{{ asset('images/landing-2/images/services/webdev.png') }}"
+                     alt="WordPress Website Development"
+                     class="pop-animate slide-up"
                      style="max-width: 100%; height: auto; margin-bottom: 15px;">
                 <h2 class="pop-animate slide-up">Web Design & Development</h2>
                 <p class="pop-animate slide-up stagger-1" style="flex-grow: 1;">We offer not only website design for our clients, we also provide the actual web development to fully build projects from scratch. The company understands the importance of having a holistic approach to constructing websites that generate both inbound traffic and leads to our clients.</p>
@@ -283,11 +276,11 @@
             </div>
 
             <!-- Web Hosting -->
-            <div class="website-package pop-animate slide-up stagger-1" 
+            <div class="website-package pop-animate slide-up stagger-1"
                  style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #fff;">
-                <img src="{{ asset('images/landing-2/images/services/2.jpg') }}" 
-                     alt="Premium Website Development" 
-                     class="pop-animate slide-up" 
+                <img src="{{ asset('images/landing-2/images/services/2.jpg') }}"
+                     alt="Premium Website Development"
+                     class="pop-animate slide-up"
                      style="max-width: 100%; height: 50%; margin-bottom: 15px;">
                 <h2 class="pop-animate slide-up">Web Hosting</h2>
                 <p class="pop-animate slide-up stagger-1" style="flex-grow: 1;">As our portfolio grew more in the following years, we soon offered web hosting as part of their services. Web hosting is arguably one of the most important factors in the success of any website and we understand that. Our web hosting services ensure that client’s websites load lightning fast and are well taken care of with virtually no downtime.</p>

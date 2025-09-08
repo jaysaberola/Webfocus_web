@@ -2,17 +2,6 @@
 @extends('theme.main')
 
 @section('pagecss')
-    <!-- Bootstrap CSS (assumed to be in theme.main) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="{{ asset('css/landing-2.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/css/font-icons.css') }}">
-
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <style>
         /* Match home page body styling */
@@ -77,7 +66,7 @@
         .about-hero {
             background: transparent;
             color: #333;
-            padding: 5rem 0;
+            padding: 10rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -180,7 +169,7 @@
         <div class="position-relative">
             <!-- Hero Header -->
 
-        <div class="services-hero mb-md-6">
+        <div class="about-hero mb-md-6">
                 <div class="container">
                     <div class="row col-mb-50">
                         <div class="col-12 text-center">
