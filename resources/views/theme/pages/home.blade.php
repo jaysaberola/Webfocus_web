@@ -68,7 +68,7 @@
         /* Ensure visibility if JavaScript is disabled */
         .pop-animate:not(.js-ready) {
             opacity: 1 !important;
-            transform: none !important;
+            transform: none !important; 
         }
 
         /* Carousel Styles */
@@ -510,7 +510,7 @@
                 </div>
             </div>
 
-            <div class="section bg-color bg-opacity-10 py-0 mt-lg-4 mt-0">
+            {{-- <div class="section bg-color bg-opacity-10 py-0 mt-lg-4 mt-0">
                 <div class="position-absolute top-0 end-0 w-100 h-100" style="background: url('{{ asset('images/landing-2/images/section-bg.svg') }}') no-repeat right 70%; background-size: 100%;"></div>
                 <div class="container py-lg-6 py-4">
                     <div class="text-center mb-5">
@@ -559,7 +559,97 @@
                         <a href="#" class="button button-xlarge bg-white text-dark px-5 py-3 rounded-pill h-op-09 submit-testimonial-btn pop-animate stagger-3">Submit Testimonial</a>
                     </div>
                 </div>
+            </div> --}}
+
+            <div class="line"></div>
+
+            <!-- testimonials and clients -->
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <h2 class="display-4 font-secondary position-relative pop-animate slide-up stagger-3 text-center mb-4" style="font-size: 40px; opacity: .9 !important;">Top Clients and Feedbacks</h2>
+                    
+                    <div class="col-md-4 mt-4">
+
+                        <ul class="clients-grid row row-cols-3">
+                            <li class="col"><a href="#"><img src="images/clients/logo37.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo51.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo53.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo62.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo63.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo32.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo34.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo35.jpg" alt="Clients"></a></li>
+                            <li class="col"><a href="#"><img src="images/clients/logo13.jpg" alt="Clients"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="owl-carousel carousel-widget" data-items="2" data-autoplay="5000">
+                            <div class="p-2">
+                                <div class="card text-center rounded-6 shadow-sm overflow-hidden">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img class="rounded-circle mx-auto w-auto mb-4" src="images/user2.png" width="64" height="64" alt="Customer Testimonails" style="width: 140px !important;">
+                                                <p class="mb-4" style="font-size: 1.125rem; line-height: 1.65;">I was impressed by how quickly and professionally the team delivered our site. They understood exactly what we needed.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <h4 class="h6 mb-0 fw-medium">Siri Alexa</h4>
+                                                    <small class="text-muted">Apple Inc.</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-icon bi-star-fill op-02"></div>
+                                </div>
+                            </div>
+
+                            <div class="p-2">
+                                <div class="card text-center rounded-6 shadow-sm overflow-hidden">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img class="rounded-circle mx-auto w-auto mb-4" src="images/user3.png" width="64" height="64" alt="Customer Testimonails" style="width: 140px !important;">
+                                                <p class="mb-4" style="font-size: 1.125rem; line-height: 1.65;">Seamlessly conceptualize multimedia based web services for optimal human capital. Collaboratively evisculate e-business value.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <h4 class="h6 mb-0 fw-medium">John Smith</h4>
+                                                    <small class="text-muted">Widows Intel Outside</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-icon bi-star-fill op-02"></div>
+                                </div>
+                            </div>
+
+                            <div class="p-2">
+                                <div class="card text-center rounded-6 shadow-sm overflow-hidden">
+                                    <div class="card-body p-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img class="rounded-circle mx-auto w-auto mb-4" src="images/user4.png" width="64" height="64" alt="Customer Testimonails" style="width: 140px !important;">
+                                                <p class="mb-4" style="font-size: 1.125rem; line-height: 1.65;">Working with WebFocus was a game-changer for our business. They built us a modern, user-friendly website that not only looks amazing.</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div>
+                                                    <h4 class="h6 mb-0 fw-medium">Rachell Valdez</h4>
+                                                    <small class="text-muted">Close OS</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-icon bi-star-fill op-02"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="line"></div>
 
             <div class="section bg-transparent my-0 py-0 py-lg-5">
                 <div class="container text-center">
